@@ -15,7 +15,8 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     RouterModule
   ],
   exports: [
-    NavBarComponent
+    NavBarComponent,
+    SearchBoxComponent
   ]
 })
 export class SharedModule { }
