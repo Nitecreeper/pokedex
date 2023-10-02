@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable, catchError, of } from 'rxjs';
 import { PokemonList } from '../interfaces/pokemon-list.interface';
+import { Pokemon } from '../interfaces/pokemon.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +19,11 @@ export class PokemonService {
     const url = `${this.apiPath}pokemon?limit=${limit}&offset=${offset}`;
     
     return this.httpClient.get<PokemonList>(url)
+                .pipe( catchError( () => of()) );
+  }
+
+  public pokemonData(pokemonUrl: string){
+    return this.httpClient.get<Pokemon>(pokemonUrl)
                 .pipe( catchError( () => of()) );
   }
 }
