@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PokemonService } from '../../services/pokemon-service.service';
-import { PokemonList } from '../../interfaces/pokemon-list.interface';
+import { PokemonList, Result } from '../../interfaces/pokemon-list.interface';
 
 @Component({
   selector: 'pokemon-pokemon-list',
@@ -10,6 +10,7 @@ import { PokemonList } from '../../interfaces/pokemon-list.interface';
 export class PokemonListComponent implements OnInit{
 
   public pokemonListResponse: PokemonList = { count: 0, next: '', previous: null, results: [] };
+  public pokemonResults: Result[] = [];
 
   constructor(
     private pokemonService: PokemonService
@@ -23,6 +24,7 @@ export class PokemonListComponent implements OnInit{
     this.pokemonService.pokemonList(9,0).subscribe(
       pokemonListResponse => {
         this.pokemonListResponse = pokemonListResponse
+        this.pokemonResults = pokemonListResponse.results;
       }
     )
   }

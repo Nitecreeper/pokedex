@@ -13,6 +13,7 @@ export class PokemonCardComponent implements OnInit{
   @Input() public pokemonResult: Result = { name: '', url: '' };
   public pokemonData: Pokemon | null = null;
   public imgSrc: string | undefined = '';
+  public pokemonId: number = 0;
 
   constructor(
     private pokemonService: PokemonService
@@ -23,6 +24,7 @@ export class PokemonCardComponent implements OnInit{
       pokemonData => {
         this.pokemonData = pokemonData;
         this.imgSrc = pokemonData!.sprites.other?.['official-artwork'].front_default;
+        this.pokemonId = pokemonData!.id;
       }
     );
   }
