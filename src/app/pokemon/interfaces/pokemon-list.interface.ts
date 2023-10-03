@@ -3,7 +3,7 @@
 export interface PokemonList {
     count:    number;
     next:     string;
-    previous: null;
+    previous: string | null;
     results:  Result[];
 }
 

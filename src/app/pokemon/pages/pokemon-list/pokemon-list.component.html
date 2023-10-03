@@ -1,3 +1,3 @@
 <div>
-    <pokemon-pokemon-card></pokemon-pokemon-card>
+    <pokemon-pokemon-card *ngFor="let pokemon of pokemonListResponse!.results" [pokemonResult]="pokemon"></pokemon-pokemon-card>
 </div>
