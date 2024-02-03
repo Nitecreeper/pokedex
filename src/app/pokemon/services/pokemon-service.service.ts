@@ -20,13 +20,17 @@ export class PokemonService {
     
     const url = `${this.apiPath}pokemon?limit=${limit}&offset=${offset}`;
     
-    console.log('::: PokemonService: pokemonList ::: ->','Get a la url:', url)
+    console.log('::: PokemonService: pokemonList ::: ->','Get:', url)
     
     return this.httpClient.get<PokemonList>(url)
                 .pipe( catchError( () => of()) );
   }
 
   public pokemonData(pokemonUrl: string): Observable<Pokemon>{
+
+    console.log('::: PokemonService: pokemonData ::: ->', 'Get:', pokemonUrl);
+    
+
     return this.httpClient.get<Pokemon>(pokemonUrl)
                 .pipe( catchError( () => of()) );
   }
