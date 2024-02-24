@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'a-pokemon-image',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './a-pokemon-image.component.css'
 })
 export class APokemonImageComponent {
-
+  @Input() public imgSrc: string | undefined = '';
+  @Input() public imgAlt: string = '';
 }
