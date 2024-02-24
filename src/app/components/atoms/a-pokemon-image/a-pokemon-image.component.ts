@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class APokemonImageComponent {
   @Input() public imgSrc: string | undefined = '';
   @Input() public imgAlt: string = '';
+  @Input() public class: string = '';
+  @Input() public width: string | null = null;
 }
