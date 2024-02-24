@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { APokemonImageComponent } from './atoms/a-pokemon-image/a-pokemon-image.component';
 import { APokemonNameComponent } from './atoms/a-pokemon-name/a-pokemon-name.component';
 import { MPokemonCardComponent } from './molecules/pokemon-card/pokemon-card.component';
+import { OPokemonCardListComponent } from './organisms/o-pokemon-card-list/o-pokemon-card-list.component';
 
 
 
@@ -11,6 +12,7 @@ import { MPokemonCardComponent } from './molecules/pokemon-card/pokemon-card.com
     APokemonImageComponent,
     APokemonNameComponent,
     MPokemonCardComponent,
+    OPokemonCardListComponent,
   ],
   imports: [
     CommonModule
@@ -18,7 +20,8 @@ import { MPokemonCardComponent } from './molecules/pokemon-card/pokemon-card.com
   exports: [
     APokemonImageComponent,
     APokemonNameComponent,
-    MPokemonCardComponent
+    MPokemonCardComponent,
+    OPokemonCardListComponent,
   ]
 })
 export class ComponentsModule { }

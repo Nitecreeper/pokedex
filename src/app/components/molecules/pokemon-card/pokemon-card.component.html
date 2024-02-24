@@ -1,1 +1,14 @@
-<p>pokemon-card works!</p>
+<div class="card h-10" style="width: 9rem;">
+    <a-pokemon-image 
+        [imgSrc]="imgSrc" 
+        [imgAlt]="imgAlt"
+    ></a-pokemon-image>
+
+    <div class="card-body">
+        <a-pokemon-name 
+            [pokemonId]="pokemonId"
+            [pokemonName]="pokemonName"
+        ></a-pokemon-name>
+    </div>
+
+</div>
