@@ -4,7 +4,7 @@ import { PPokemonDetailComponent } from './components/pages/p-pokemon-detail/p-p
 
 export const routes: Routes = [
     {'path': 'list', 'title': 'List', component: PPokemonListComponent},
-    {'path': 'detail', 'title': 'Detail', component: PPokemonDetailComponent},
+    {'path': 'detail/:id', 'title': 'Detail', component: PPokemonDetailComponent},
     {'path': '', redirectTo: '/list', pathMatch: 'full'},
     {'path': '**', component: PPokemonListComponent},
 ];

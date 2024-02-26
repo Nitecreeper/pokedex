@@ -1,7 +1,7 @@
 <div class="row row-cols-2 row-cols-sm-4 row-cols-md-6 row-cols-lg g-4">
     <m-pokemon-card *ngFor="let pokemonResult of pokemonResults"
         pokemonUrl={{pokemonResult.url}}
-        routerLink="/detail"
+        [routerLink]="['/detail', pokemonResult.name]"
         (click) = "onClickCard(pokemonResult.name)"
     ></m-pokemon-card>
 </div>

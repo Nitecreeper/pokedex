@@ -6,6 +6,7 @@ import { APokemonImageComponent } from './atoms/a-pokemon-image/a-pokemon-image.
 import { APokemonNameComponent } from './atoms/a-pokemon-name/a-pokemon-name.component';
 import { MPokemonCardComponent } from './molecules/pokemon-card/pokemon-card.component';
 import { OPokemonCardListComponent } from './organisms/o-pokemon-card-list/o-pokemon-card-list.component';
+import { PPokemonDetailComponent } from './pages/p-pokemon-detail/p-pokemon-detail.component';
 import { PPokemonListComponent } from './pages/p-pokemon-list/p-pokemon-list.component';
 import { TNavBarComponent } from './templates/t-nav-bar/t-nav-bar.component';
 import { TPokemonListComponent } from './templates/t-pokemon-list/t-pokemon-list.component';
@@ -18,6 +19,7 @@ import { TPokemonListComponent } from './templates/t-pokemon-list/t-pokemon-list
     APokemonNameComponent,
     MPokemonCardComponent,
     OPokemonCardListComponent,
+    PPokemonDetailComponent,
     PPokemonListComponent,
     TNavBarComponent,
     TPokemonListComponent,
@@ -31,6 +33,7 @@ import { TPokemonListComponent } from './templates/t-pokemon-list/t-pokemon-list
     APokemonNameComponent,
     MPokemonCardComponent,
     OPokemonCardListComponent,
+    PPokemonDetailComponent,
     PPokemonListComponent,
     TNavBarComponent,
     TPokemonListComponent,
