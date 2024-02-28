@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__child{
+    flex:1;
+}
+
+.container__child--name{
+    justify-content: left;
+}
+
+.container__child--number{
+    justify-content: right;
+}

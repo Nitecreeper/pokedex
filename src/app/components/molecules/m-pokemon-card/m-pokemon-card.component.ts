@@ -4,8 +4,8 @@ import { Pokemon } from '../../../interfaces/pokemon.interfaces';
 
 @Component({
   selector: 'm-pokemon-card',
-  templateUrl: './pokemon-card.component.html',
-  styleUrl: './pokemon-card.component.css'
+  templateUrl: './m-pokemon-card.component.html',
+  styleUrl: './m-pokemon-card.component.css'
 })
 export class MPokemonCardComponent implements OnInit{
   @Input() public pokemonUrl: string = '';

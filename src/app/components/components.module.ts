@@ -4,7 +4,7 @@ import { RouterLink } from '@angular/router';
 
 import { APokemonImageComponent } from './atoms/a-pokemon-image/a-pokemon-image.component';
 import { APokemonNameComponent } from './atoms/a-pokemon-name/a-pokemon-name.component';
-import { MPokemonCardComponent } from './molecules/pokemon-card/pokemon-card.component';
+import { MPokemonCardComponent } from './molecules/m-pokemon-card/m-pokemon-card.component';
 import { OPokemonCardListComponent } from './organisms/o-pokemon-card-list/o-pokemon-card-list.component';
 import { PPokemonDetailComponent } from './pages/p-pokemon-detail/p-pokemon-detail.component';
 import { PPokemonListComponent } from './pages/p-pokemon-list/p-pokemon-list.component';

@@ -1,15 +1,18 @@
 <div class="card h-10">
-    <a-pokemon-image 
-        [imgSrc]="imgSrc" 
-        [imgAlt]="imgAlt"
-        class="card-img-top"
-    ></a-pokemon-image>
-
-    <div class="card-body">
+    <div>
         <a-pokemon-name 
             [pokemonId]="pokemonId"
             [pokemonName]="pokemonName"
         ></a-pokemon-name>
+    </div>
+
+    <a-pokemon-image 
+    [imgSrc]="imgSrc" 
+    [imgAlt]="imgAlt"
+    class="card-img-top"
+    ></a-pokemon-image>
+    
+    <div class="card-body">
     </div>
 
 </div>
