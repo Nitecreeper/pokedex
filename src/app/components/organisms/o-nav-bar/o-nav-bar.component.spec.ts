@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TNavBarComponent } from './t-nav-bar.component';
+import { ONavBarComponent } from './o-nav-bar.component';
 
-describe('TNavBarComponent', () => {
-  let component: TNavBarComponent;
-  let fixture: ComponentFixture<TNavBarComponent>;
+describe('ONavBarComponent', () => {
+  let component: ONavBarComponent;
+  let fixture: ComponentFixture<ONavBarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TNavBarComponent]
+      imports: [ONavBarComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TNavBarComponent);
+    fixture = TestBed.createComponent(ONavBarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

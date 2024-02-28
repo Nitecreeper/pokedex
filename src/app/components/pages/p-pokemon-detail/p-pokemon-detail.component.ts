@@ -16,15 +16,12 @@ export class PPokemonDetailComponent implements OnInit{
   public imgAlt: string = '';
   public pokemonName: string = '';
 
-  public tempUrl: string = ''; // ELIMINAR ESTA VARIABLE!!!
-
   constructor(
     private pokemonApiService: PokemonApiService
   ){}
 
   ngOnInit(): void {
     this.searchPokemonData(this.pokemonId);
-    this.tempUrl = `https://pokeapi.co/api/v2/pokemon/${this.pokemonId}`
   }
 
   private searchPokemonData(id: string): void {
@@ -33,8 +30,8 @@ export class PPokemonDetailComponent implements OnInit{
       pokemonData =>{
         this.pokemonData = pokemonData;
         this.imgSrc = pokemonData.sprites.other?.['official-artwork'].front_default;
-        this.pokemonId = pokemonData.id.toString();
-        this.pokemonName = pokemonData.name;
+        // this.pokemonId = pokemonData.id.toString();
+        // this.pokemonName = pokemonData.name;
       }
     )
   }

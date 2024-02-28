@@ -8,8 +8,8 @@ import { MPokemonCardComponent } from './molecules/pokemon-card/pokemon-card.com
 import { OPokemonCardListComponent } from './organisms/o-pokemon-card-list/o-pokemon-card-list.component';
 import { PPokemonDetailComponent } from './pages/p-pokemon-detail/p-pokemon-detail.component';
 import { PPokemonListComponent } from './pages/p-pokemon-list/p-pokemon-list.component';
-import { TNavBarComponent } from './templates/t-nav-bar/t-nav-bar.component';
 import { TPokemonListComponent } from './templates/t-pokemon-list/t-pokemon-list.component';
+import { ONavBarComponent } from './organisms/o-nav-bar/o-nav-bar.component';
 
 
 
@@ -21,8 +21,8 @@ import { TPokemonListComponent } from './templates/t-pokemon-list/t-pokemon-list
     OPokemonCardListComponent,
     PPokemonDetailComponent,
     PPokemonListComponent,
-    TNavBarComponent,
     TPokemonListComponent,
+    ONavBarComponent,
   ],
   imports: [
     CommonModule,
@@ -35,8 +35,8 @@ import { TPokemonListComponent } from './templates/t-pokemon-list/t-pokemon-list
     OPokemonCardListComponent,
     PPokemonDetailComponent,
     PPokemonListComponent,
-    TNavBarComponent,
     TPokemonListComponent,
+    ONavBarComponent,
   ]
 })
 export class ComponentsModule { }
