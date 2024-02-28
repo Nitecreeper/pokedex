@@ -1,3 +1,12 @@
 .card:hover{
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
+
+.card-body--text{
+    display: flex;
+}
+
+.card__types{
+    margin: 5px;
+    padding: 6px;
+}

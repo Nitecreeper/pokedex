@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PokemonApiService } from '../../../services/pokemon-api/pokemon-api.service';
-import { Pokemon } from '../../../interfaces/pokemon.interfaces';
+import { Pokemon, Type } from '../../../interfaces/pokemon.interfaces';
+import { COLOR_BY_TYPE } from '../../shared/styles/colors';
 
 @Component({
   selector: 'm-pokemon-card',
@@ -15,6 +16,8 @@ export class MPokemonCardComponent implements OnInit{
   public imgAlt: string = '';
   public pokemonId: string = '';
   public pokemonName: string = '';
+  public types: Type[] = [];
+  public backgroundCardColor: string = '#FFFFFF';
 
   constructor(
     private pokemonApiService:PokemonApiService
@@ -31,7 +34,18 @@ export class MPokemonCardComponent implements OnInit{
         this.imgSrc = pokemonData.sprites.other?.['official-artwork'].front_default;
         this.pokemonId = pokemonData.id.toString();
         this.pokemonName = pokemonData.name;
+        this.types = pokemonData.types;
+        this.backgroundCardColorSelector();
       }
     )
+  }
+
+  public backgroundCardColorSelector(): void{
+    const tipoPokemon = this.types[0].type.name;
+    this.backgroundCardColor = COLOR_BY_TYPE[tipoPokemon];
+  }
+
+  public backgroundTextColorSelector(word: string): string{
+    return COLOR_BY_TYPE[word];
   }
 }

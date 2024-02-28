@@ -23,7 +23,7 @@ export class OPokemonCardListComponent implements OnInit{
   }
 
   private searchPokemonList(): void {
-    this.pokemonApiService.pokemonList(18,0).subscribe(
+    this.pokemonApiService.pokemonList(20,0).subscribe(
       pokemonListResponse => {
         this.pokemonListResponse = pokemonListResponse;
         this.pokemonResults = pokemonListResponse.results;
